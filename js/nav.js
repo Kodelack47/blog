@@ -5,14 +5,24 @@ const navMenu = [
         class: "nav-item"
     },
     {
-        name: "Mountains",
-        link: "mountain.html",
+        name: "Login",
+        link: "login.html",
         class: "nav-item"
     },
 
     {
-        name: "National Park",
-        link: "nationalPark.html",
+        name: "Posts",
+        link: "posts.html",
+        class: "nav-item"
+    },
+    {
+        name: "Registration",
+        link: "registration.html",
+        class: "nav-item"
+    },
+    {
+        name: "Profile",
+        link: "profile.html",
         class: "nav-item"
     },
 
@@ -83,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     footer.appendChild(year);
 
-    const copyright = document.createTextNode(' \u00A9 Presented by Yonesh Thapa. All right reserved.')
+    const copyright = document.createTextNode(' \u00A9 Presented by . All right reserved.')
     footer.appendChild(copyright);
 
     document.body.appendChild(footer);
