@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #f1f6ff;
+  }
+
+  #login-form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 10% auto;
+    padding: 30px;
+    width: 400px;
+  }
+
+  h1 {
+    color: #0091ea;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  label {
+    color: #777;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    background-color: #0091ea;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #0072c6;
+  }
+
+  .error-message {
+    color: #f00;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* New styles for banner and images */
+  .banner {
+    background-color: #0091ea;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+  }

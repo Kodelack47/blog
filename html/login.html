@@ -1,0 +1,42 @@
+<head>
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="banner">
+      <h1>Login Page</h1>
+      <img src="images/gu.jpg" alt="Logo" class="logo">
+    </div>
+  
+    <form id="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <input type="submit" value="Login">
+      <div class="error-message" id="error-message"></div>
+    </form>
+  
+    <script>
+      const form = document.getElementById('login-form');
+      const errorMessage = document.getElementById('error-message');
+  
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+  
+        const username = form.username.value;
+        const password = form.password.value;
+  
+        if (username === '' || password === '') {
+          errorMessage.textContent = 'Please enter both username and password.';
+        } else if (username !== 'java' || password !== 'script') {
+          errorMessage.textContent = 'Incorrect username or password.';
+        } else {
+          // Redirect to dashboard page
+          window.location.href = 'index.html';
+        }
+      });
+    </script>
+  </body>
