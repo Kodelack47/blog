@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div class="banner">
-      <h1>Login Page</h1>
-      <img src="images/gu.jpg" alt="Logo" class="logo">
+    <div class="navbar">
+        <div class="navbar">
+            <a class="active" href="/html/main.html">Home</a>
+            <a href="/html/login.html">Login</a>
+            <a href="/html/posts.html">Post</a>
+            <a href="/html/profile.html">Profile</a>
+            <a href="/html/registration.html">Registration</a>
+        </div>
     </div>
-  
+    <br>
+   <body>
+    <br>
+    <br>
+    <h1>Login Form</h1>
+    <div class="login">
     <form id="login-form">
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" required>
@@ -18,7 +28,7 @@
       <input type="submit" value="Login">
       <div class="error-message" id="error-message"></div>
     </form>
-  
+</div>
     <script>
       const form = document.getElementById('login-form');
       const errorMessage = document.getElementById('error-message');
@@ -40,3 +50,36 @@
       });
     </script>
   </body>
+  <style>
+    /* Style the navigation bar */
+    .navbar {
+        overflow: hidden;
+        background-color: #f7f5f5;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    /* Navigation links */
+    .navbar a {
+        float: left;
+        display: block;
+        color: #454343;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    /* Add a hover effect for navigation links */
+    .navbar a:hover {
+        background-color: #8dcbe8;
+        color: rgb(223, 237, 226);
+    }
+
+    /* Active/selected navigation link */
+    .active {
+        background-color: #0091ea;
+        color: rgb(63, 60, 60);
+    }
+</style>
