@@ -12,11 +12,11 @@ const navMenu = [
 
     {
         name: "Posts",
-        link: "posts.html",
+        link: "index.html",
         class: "nav-item"
     },
     {
-        name: "Registration",
+        name: "Register",
         link: "registration.html",
         class: "nav-item"
     },
@@ -103,3 +103,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 })
+
+// Add an event listener to the window to execute the function when the page loads
+window.addEventListener('DOMContentLoaded', (event) => {
+    // Get all the anchor elements inside the navbar
+    const navbarLinks = document.querySelectorAll('.navbar a');
+  
+    // Add a click event listener to each navbar link
+    navbarLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        // Remove the 'active' class from all navbar links
+        navbarLinks.forEach(link => link.classList.remove('active'));
+  
+        // Add the 'active' class to the clicked link
+        event.target.classList.add('active');
+      });
+    });
+  });
