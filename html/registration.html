@@ -14,7 +14,6 @@
     <body>
       
     <h1>User Registration</h1>
-		<title>User Registration</title>
 		<style>
 		  h1 {
 			text-align: center;
@@ -36,7 +35,22 @@
         <label><input type="radio" name="find-out" value="social-media">Social media</label>
         <label><input type="radio" name="find-out" value="other">Other</label>
       </div>
-      <input type="submit" value="Register">
+      <input type="submit" value="Register" id="register">
     </form>
   </body>
+  <script>
+
+    function storeData(){
+    const reg = document.getElementById("register")
+    document.addEventListener("click", "register")
+    if(reg.onclick){
+      window.open("/html/profile.html")
+    }
+    else{
+      window.alert("Try again")
+    }
+  };
+   storeData
+  </script>
+  
 </html>
