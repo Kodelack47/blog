@@ -1,0 +1,72 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: #416ad9;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Profile */
+  aside {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-bottom: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Main content */
+  main {
+    flex: 2;
+  }
+  
+  .post {
+    margin-bottom: 20px;
+  }
+  
+  .post h3 {
+    margin-top: 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    aside {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
