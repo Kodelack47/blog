@@ -49,6 +49,15 @@ function login (loginData) {
         });
 }
 
+function register(registerData) {
+    return fetch(apiBaseURL + "/api/users", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(registerData)
+    }).then(response=>location="/html/login.html")
+} 
 
 // This is the `logout()` function you will use for any logout button
 // which you may include in various pages in your app. Again, READ this
